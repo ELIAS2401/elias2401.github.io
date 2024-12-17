@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Che Import Carrito</title>
+    <link rel="stylesheet" href="Styles/styleCarrito.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="encabezado">
+        <div class="contenedorCheImport">
+            <a href="index.html">
+                <img id="cheImport" src="Logos/2.png">
+            </a>
+        </div>
+
+        <div class="carrito">
+            <a href="carrito.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Carrito -->
+
+    <div id="contenedorProductosCarrito" class="main">
+        <div class="titulo">
+            <div class="volver">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-circle"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                    </svg>
+                </a>
+            </div>
+            <h2>Carrito</h2>
+        </div>
+        <div id="carritoVacio" class="productosElegidos">
+            <p>Tu carrito está vacio. 😞</p>
+        </div>
+
+        <div id="carritoProductos">
+        </div>
+
+        <div id="carritoOpciones" class="opciones disabled">
+            <button id="botonVaciarCarrito" class="botonVaciar">Vaciar carrito</button>
+            <div class="botonesJuntos">
+                <span id="precioTotal" class="total">TOTAL: $30.000</span>
+                <button id="botonCompra" class="botonComprar">Confirmar compra</button>
+            </div>
+        </div>
+
+        <div id="carritoComprado" class="agradecimiento disabled">
+            <p>Muchas gracias por tu compra ☺️</p>
+        </div>
+    </div>
+
+</body>
+
+<script src="scripts/scriptCarrito.js"></script>
+
+</html>

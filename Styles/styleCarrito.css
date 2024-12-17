@@ -1,0 +1,234 @@
+:root {
+    --primario: #2d96a0;
+    --secundario: #1c1c1c;
+    --blanco: #ffffff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    /* 1rem = 10px */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color: var(--blanco);
+    color: var(--secundario);
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--secundario);
+}
+
+h2 {
+    color: var(--primario);
+}
+
+/*HEADER*/
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cheImport {
+    width: 14.3rem;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.carrito {
+    position: relative;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.carrito svg {
+    width: 2.5rem;
+}
+
+.contadorProductos {
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+
+    background-color: var(--secundario);
+    color: var(--blanco);
+    height: 1.6rem;
+    width: 1.6rem;
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/*Productos*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.volver{
+    position: absolute;
+    left: 11rem;
+    margin-top: 1rem;
+}
+
+.volver svg {
+    width: 2rem;
+}
+
+.productosElegidos {
+    margin-top: 3rem;
+    color: var(--primario);
+}
+
+.productosElegidos p {
+    margin-top: 1rem;
+    color: var(--secundario);
+}
+
+#contenedorProductosCarrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 4rem;
+}
+
+.productosCaja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.2);
+    width: 120rem;
+    height: 18rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    gap: 3rem;
+    text-align: justify;
+    line-height: 3rem;
+    margin-top: 1.5rem;
+}
+
+.productosCaja img {
+    width: 10rem;
+    height: 14rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/*Botones*/
+
+button {
+    padding: 0.8rem;
+    width: 21rem;
+    border: none;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primario);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Opciones */
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 57rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.botonVaciar {
+    background-color: rgb(0, 0, 0, 0.1);
+    color: var(--secundario);
+    font-weight: lighter;
+}
+
+.botonesJuntos {
+    display: flex;
+}
+
+.botonComprar {
+    background-color: var(--primario);
+    color: var(--blanco);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.total {
+    background-color: rgb(0, 0, 0, 0.1);
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding: 0.8rem;
+    width: 21rem;
+
+}
+
+.tacho {
+    color: rgb(198, 0, 0);
+}
+
+.agradecimiento {
+    display: flex;
+    margin-right: 93rem;
+    margin-top: 4rem;
+}
+
+/*FOOTER*/
+
+.contenedorFooter {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+.contenedorFooter a {
+    color: var(--blanco);
+}
+
+.contenedorFooter img {
+    width: 6rem;
+    height: auto;
+}
+
+/* JS */
+
+.disabled {
+    display: none;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Che Import</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+
+    <div class="encabezado">
+        <div class="contenedorCheImport">
+            <a href="index.html">
+                <img id="cheImport" src="Logos/2.png">
+            </a>
+        </div>
+
+        <div class="buscador">
+            <input type="text" placeholder="¿Qué estás buscando?" class="queBuscas">
+        </div>
+
+        <div class="carrito">
+            <a href="carrito.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                </svg>
+                <div class="contadorProductos">
+                    <span id="numerito">0</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navegador -->
+
+    <div class="divNavegador">
+        <nav class="navegacionPrincipal contenedorNav">
+            <a href="index.html" id="todos" class="botonCategoria active" name="enlaces">Inicio</a>
+            <a href="#" id="termos" class="botonCategoria" name="enlaces">Termos</a>
+            <a href="#" id="jarras" class="botonCategoria" name="enlaces">Jarras</a>
+            <a href="#" id="botellas" class="botonCategoria" name="enlaces">Botellas</a>
+            <a href="#" id="accesorios" class="botonCategoria" name="enlaces">Accesorios</a>
+            <a href="#" id="sillas" class="botonCategoria" name="enlaces">Sillas</a>
+            <a href="#" id="conservadoras" class="botonCategoria" name="enlaces">Conservadoras</a>
+        </nav>
+    </div>
+    <!-- Productos -->
+
+    <div class="nuestrosProductos">
+        <h2 id="tituloPrincipal">Nuestros productos</h2>
+    </div>
+
+    <div id="contenedorProductos" class="main">
+
+    </div>
+
+</body>
+
+<footer>
+    <div class="contenedorFooter">
+        <div>
+            <a href="#">Cómo comprar</a>
+        </div>
+        <div>
+            <p>Contactanos</p>
+            <a href="#">
+                <img src="Logos/wpp.png" alt="">
+                <img src="Logos/ig.png" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+
+</html>
